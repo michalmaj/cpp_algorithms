@@ -30,7 +30,7 @@ int main()
 
 	std::cout << std::endl;
 
-	// output
+	// output - print an array
 	for(int i{0}; i < 100; ++i)
 	{
 		std::cout << marks[i] << ", ";
