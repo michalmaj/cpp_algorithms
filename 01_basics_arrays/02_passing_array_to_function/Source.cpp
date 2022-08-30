@@ -2,7 +2,7 @@
 
 // This is an example of function for print an array.
 // In this example array has an integer type.
-// In this case our responsibility is to pass as a parameter a size of an array
+// In this case our responsibility is to pass as a parameter a size of an array.
 void print_array(int arr[], int n_size)
 {
 	// Size of the array will be unknown, because in this function we have only
