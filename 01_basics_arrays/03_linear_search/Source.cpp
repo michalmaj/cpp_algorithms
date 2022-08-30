@@ -1,6 +1,9 @@
 /*
  * This is example of brute-force algorithm.
  * Searching for a given value in an array one by one.
+ * This code in worst case (iterate through entire array) - number of operations
+ * we have to execute is proportional to the length of an array. So the complexity is:
+ * O(N) time.
  */
 #include <iostream>
 
