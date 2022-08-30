@@ -1,3 +1,9 @@
+/*
+ * Array is collection of elements.
+ * Elements must be the same type.
+ * Array is placed in contiguous  location. 
+ */
+
 #include <iostream>
 
 
@@ -13,7 +19,7 @@ int main()
 	// assign a value for index 0
 	marks[0] = -1;
 
-	// input
+	// input next item in a loop
 	for(int i{1}; i <= n; ++i)
 	{
 		std::cout << "Enter " << i << " mark: ";
