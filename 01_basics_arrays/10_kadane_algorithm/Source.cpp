@@ -2,6 +2,7 @@
  * Another algorithm to sum subarray and find biggest sum.
  * Kadane's algorithm check all positive contiguous elements of the array and keeps tracking
  * the maximum sum.
+ * The time complexity is O(N), because we have only one for loop
  */
 
 #include <iostream>
