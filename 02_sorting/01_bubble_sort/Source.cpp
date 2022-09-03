@@ -23,9 +23,8 @@ void bubble_sort(int (&arr)[N])
 		// repeated swapping
 		for(int j{0}; j <= N - times - 1; ++j)
 		{
-			if (arr[j] > arr[j + 1])
-				if(compare(arr[j], arr[j + 1]))
-					std::swap(arr[j], arr[j + 1]);
+			if(compare(arr[j], arr[j + 1]))
+				std::swap(arr[j], arr[j + 1]);
 		}
 	}
 }
