@@ -1,6 +1,8 @@
 /*
  * Insertion sort is similar to playing cards.
  * Insert the card in its correct position in a sorted part
+ * So, in other words we move elements to the right until examined element is
+ * greater than element on the left side.
  */
 
 #include <iostream>
