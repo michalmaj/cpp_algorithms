@@ -19,6 +19,8 @@ void insertion_sort(int (&arr)[N])
 		// loop until prev is not smaller than 0, and
 		// last value is greater than current
 		// check subsequent elements
+		// loop to finnd right index where the
+		// element current should be inserted
 		while(prev >= 0 and arr[prev] > current)
 		{
 			// we need to move examined value to the right by 1 
