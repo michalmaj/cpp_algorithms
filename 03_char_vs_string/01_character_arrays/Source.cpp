@@ -25,7 +25,7 @@ int main()
 	char good_array[]{ 'a', 'b', 'c', '\0'};
 	std::cout << good_array << std::endl;
 
-	// We can also initialize char array using literal string, then we don't need
+	// We can also initialize char array using string literal, then we don't need
 	// the null character as a last character.
 	char better_version[]{ "abc" };
 	std::cout << better_version << std::endl;
