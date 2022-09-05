@@ -4,6 +4,12 @@
  */
 
 #include <iostream>
+#include <cstring> // Header which contains strlen:
+				   // Returns the length of the given byte string, that is,
+				   // the number of characters in a character array whose first element
+				   // is pointed to by str up to and not including the first null character.
+				   // The behavior is undefined if there is no null character in the
+				   // character array pointed to by str.
 
 
 int main()
@@ -29,6 +35,23 @@ int main()
 	// the null character as a last character.
 	char better_version[]{ "abc" };
 	std::cout << better_version << std::endl;
+
+	// Some functions we can use
+	char letters[]{ "abcdefghi" };
+	std::cout << letters << std::endl;
+
+	std::cout << "Number of visible elements: " << strlen(letters) << std::endl;
+	std::cout << "Number of elements (include null character): "
+		<< sizeof(letters) << std::endl;
+
+	// To read characters into character array using we can use std::cin.
+	// We don't need to use a for loop (like with the std::cout).
+	// But there is a pitfall - we can't use a space.
+	char test[100];
+	std::cin >> test;
+
+	std::cout << test << std::endl;
+
 
 	return 0;
 }
