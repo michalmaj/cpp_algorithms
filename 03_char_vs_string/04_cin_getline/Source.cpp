@@ -11,7 +11,7 @@ int main()
 
 	// It will automatically terminated when new line occurs.
 	// As a parameters we need to use name of our array and how many
-	// character we want to type
+	// character we want to type.
 	std::cin.getline(sentence, 1000);
 
 	std::cout << sentence << std::endl;
