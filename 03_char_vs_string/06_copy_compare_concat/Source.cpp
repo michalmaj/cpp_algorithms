@@ -17,8 +17,8 @@
  * Compares two null-terminated byte strings lexicographically.
  * It can return 3 values:
  *		 0 if the contents of both strings are equal
- *		-1 if the first character that does not match has a lower value in ptr1 than in ptr2
- *		 1 if the first character that does not match has a greater value in ptr1 than in ptr2
+ *		<0 if the first character that does not match has a lower value in ptr1 than in ptr2
+ *		>0 if the first character that does not match has a greater value in ptr1 than in ptr2
  *
  * std::strcat:
  * Appends a copy of the character string pointed to by src to the end of the character
@@ -51,8 +51,10 @@ int main()
 	std::cout << "arr2 after copy elements: " << arr2 << std::endl;
 
 	// Compare C-style string lexicography.
-	std::cout << std::strcmp(arr1, arr2) << std::endl; // 0 if same
-	std::cout << std::strcmp(arr1, arr3) << std::endl; // -1 because a is before o
+	std::cout << "Compare apple to apple"
+		<< std::strcmp(arr1, arr2) << std::endl; // 0 if same
+	std::cout << "Compare apple to orange"
+		<< std::strcmp(arr1, arr3) << std::endl; // -1, because 'a' is before 'o'
 
 	// Concatenation C-style strings
 	char h[100]{"Hello "};
@@ -61,6 +63,9 @@ int main()
 	// We can also copy std::strcat by std::strcpy
 	std::strcpy(arr2, std::strcat(h, w));
 	std::cout << "arr2 after copy: " << arr2 << std::endl;
+
+	std::cout << "Compare Hello World to apple: "
+	<< std::strcmp(arr1, arr2) << std::endl; // 1, because 'H' in ASCII is smaller than 'a'
 	
 
 
