@@ -16,5 +16,9 @@ int main()
 
 	std::cout << sentence << std::endl;
 
+	// If we want to change the stop criteria, we need to add an extra parameter
+	std::cin.getline(sentence, 1000, '#'); // In this case it stops when see hash.
+	std::cout << sentence << std::endl;
+
 	return 0;
 }
