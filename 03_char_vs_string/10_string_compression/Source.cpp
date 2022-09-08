@@ -86,9 +86,10 @@ int main()
 {
 	char a1[1000]{ "aabbccc" };
 	char a2[1000]{ "abbbbbbbbbbbb" };
+	char a3[1000]{ "aaabbccddee" };
 	std::vector<char> vec;
 
-	for (const auto& e : a1)
+	for (const auto& e : a3)
 	{
 		if(e == '\0')
 			break;
