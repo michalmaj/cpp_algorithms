@@ -14,6 +14,12 @@ int main()
 
 	std::cout << "Address of x using a pointer: " << x_ptr << std::endl;
 
+	std::cout << "Address of pointer: " << &x_ptr << std::endl;
+
+	// Pointer to the pointer
+	int** x_pptr = &x_ptr;
+
+	std::cout << "Address of x_ptr using a pointer to pointer: " << x_pptr << std::endl;
 
 	return 0;
 }
