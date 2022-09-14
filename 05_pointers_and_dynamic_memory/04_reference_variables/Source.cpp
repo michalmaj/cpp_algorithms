@@ -7,18 +7,18 @@
 
 #include <iostream>
 
-void pass_by_copy(int x)
+void pass_by_value(int x)
 {
 	x++; // increment x
-	std::cout << "Variable value inside pass_by_copy: " << x << std::endl;
-	std::cout << "Variable address inside pass_by_copy: " << &x << std::endl;
+	std::cout << "Variable value inside pass_by_value: " << x << std::endl;
+	std::cout << "Variable address inside pass_by_value: " << &x << std::endl;
 }
 
 void pass_by_reference(int& x)
 {
 	x++; // increment x
 	std::cout << "Variable value inside pass_by_reference: " << x << std::endl;
-	std::cout << "Variable address inside pass_by_copy: " << &x << std::endl;
+	std::cout << "Variable address inside pass_by_value: " << &x << std::endl;
 }
 
 int main()
@@ -33,8 +33,8 @@ int main()
 	std::cout << "Value of b: " << b << std::endl;
 	std::cout << "Address of b: " << &b << std::endl;
 
-	// Variable 'a' is sent as a copy
-	pass_by_copy(a);
+	// Variable 'a' is sent as a value
+	pass_by_value(a);
 
 	// Variable 'b' is sent as a reference
 	pass_by_reference(b);
