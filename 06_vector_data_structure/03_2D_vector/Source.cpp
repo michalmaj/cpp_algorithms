@@ -19,7 +19,7 @@ int main()
 	for(size_t i{0}; i < arr.size(); ++i)
 	{
 		// Iterate using range-based for loop through columns
-		for (size_t number : arr[i])
+		for (const size_t number : arr[i])
 			std::cout << number << " ";
 		std::cout << std::endl;
 	}
