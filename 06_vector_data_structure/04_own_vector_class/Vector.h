@@ -13,10 +13,10 @@ private:
 
 public:
 	// Constructor
-	Vector()
+	Vector(int max_size=1)
 	{
 		current_size = 0;
-		max_size = 1;
+		this->max_size = max_size;
 		arr = new T[max_size];
 	}
 
@@ -55,5 +55,36 @@ public:
 		return current_size == 0;
 	}
 
+	// Front, back, at(i)
+	T front() const
+	{
+		return arr[0];
+	}
+
+	T back() const
+	{
+		return arr[current_size - 1];
+	}
+
+	T at(int idx) const
+	{
+		return arr[idx];
+	}
+
+	int size() const
+	{
+		return current_size;
+	}
+
+	int capacity () const
+	{
+		return max_size;
+	}
+
+	// Overload operator[]
+	int operator[](int i) const
+	{
+		return arr[i];
+	}
 	
 };
