@@ -28,7 +28,7 @@ int main()
 	// Search for item in given array and return an iterator
 	std::vector<int>::iterator it = std::find(arr.begin(), arr.end(), key);
 
-	// If we found our item
+	// If we found our item (check if iterator doesn't point to the place after last element)
 	if (it != arr.end())
 		// To show index of searching item we need to subtract arr.begin() from given iterator
 		std::cout << "Index of " << key << ": " << (it - arr.begin()) << std::endl;
