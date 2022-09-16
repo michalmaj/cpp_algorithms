@@ -24,5 +24,14 @@ int main()
 		std::cout << v[i] << " ";
 	std::cout << std::endl;
 
+	// Thanks to templates we can easily create a vector of any types
+	Vector<char> vc;
+	vc.push_back('a');
+	vc.push_back('b');
+
+	for(int i{0}; i < vc.size(); ++i)
+		std::cout << vc[i] << " ";
+	std::cout << std::endl;
+
 	return 0;
 }

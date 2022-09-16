@@ -50,7 +50,7 @@ public:
 			current_size--;
 	}
 
-	bool is_empty()
+	bool is_empty() const
 	{
 		return current_size == 0;
 	}
@@ -82,7 +82,7 @@ public:
 	}
 
 	// Overload operator[]
-	int operator[](int i) const
+	T operator[](int i) const
 	{
 		return arr[i];
 	}
