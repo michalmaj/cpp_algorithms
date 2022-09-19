@@ -29,7 +29,7 @@ int main()
 	std::cin >> i;
 
 	auto result = getIthBIt(n, i);
-	std::cout << "\n\nBit in " << i << " index: " << result << std::endl;;
+	std::cout << "\nBit in " << i << " index: " << result << std::endl;;
 
 	return 0;
 }
