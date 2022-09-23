@@ -12,6 +12,7 @@
  */
 
 #include <iostream>
+#include <bitset>
 
 int main()
 {
@@ -23,6 +24,9 @@ int main()
 	int x;
 	std::cout << "Enter the number to check if is even or odd: ";
 	std::cin >> x;
+
+	std::cout << "Number x in binary: " << std::bitset<8>(x) << std::endl;
+	std::cout << "Number 1 in binary: " << std::bitset<8>(1) << std::endl;
 
 	if (x & 1)
 		std::cout << "Number is odd\n";
