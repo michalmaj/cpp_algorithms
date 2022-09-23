@@ -10,6 +10,9 @@
 void setIthBit(int& n, int i)
 {
 	int mask{ 1 << i };
+	std::cout << std::setw(20) << "Mask: " << std::setw(10) << std::bitset<8>(mask) << std::endl;
+	std::cout << std::setw(20) << "Value: " << std::setw(10) << std::bitset<8>(n) << std::endl;
+	std::cout << std::setw(20) << "Mask & value: " << std::setw(10) << std::bitset<8>(n | mask) << std::endl;
 	n = (n | mask);
 }
 
@@ -17,7 +20,7 @@ int main()
 {
 	int n = 5;
 	int i;
-	std::cout << "Enter which bit do you want to change: ";
+	std::cout << "Enter index of bit do you want to change: ";
 	std::cin >> i;
 
 	setIthBit(n, i);
