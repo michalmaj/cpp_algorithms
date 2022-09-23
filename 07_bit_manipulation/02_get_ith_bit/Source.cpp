@@ -10,8 +10,10 @@
  */
 int getIthBIt(int n, int i)
 {
-	// Set the mask where bit at given position will be 1 and the rest will be 0
+	// Set the mask where bit at given position will be 1 and the rest will be 0.
+	// To accomplish this we have to move 1 bit i times to the left.
 	int mask{ 1 << i };
+
 	std::cout << std::setw(20) << "Mask: " << std::setw(10) << std::bitset<8>(mask) << std::endl;
 	std::cout << std::setw(20) << "Value: " << std::setw(10) << std::bitset<8>(n) << std::endl;
 	std::cout << std::setw(20) << "Mask & value: " << std::setw(10) << std::bitset<8>(mask & n) << std::endl;
