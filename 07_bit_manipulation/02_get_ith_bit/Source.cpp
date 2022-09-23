@@ -27,11 +27,11 @@ int main()
 {
 	int n = 5;
 	int i;
-	std::cout << "Enter which bit do you want to see: ";
+	std::cout << "Enter index of bit do you want to see: ";
 	std::cin >> i;
 
 	auto result = getIthBIt(n, i);
-	std::cout << "\nBit in " << i << " index: " << result << std::endl;;
+	std::cout << "\nBit at " << i << " index: " << result << std::endl;;
 
 	return 0;
 }
