@@ -9,10 +9,12 @@
  */
 void setIthBit(int& n, int i)
 {
+	// Mask contains 1 at given index, rest will be 0's
 	int mask{ 1 << i };
 	std::cout << std::setw(20) << "Mask: " << std::setw(10) << std::bitset<8>(mask) << std::endl;
 	std::cout << std::setw(20) << "Value: " << std::setw(10) << std::bitset<8>(n) << std::endl;
 	std::cout << std::setw(20) << "Mask & value: " << std::setw(10) << std::bitset<8>(n | mask) << std::endl;
+	// Because our mask has a 1 at index i, same bit index in given n will be turn on
 	n = (n | mask);
 }
 
