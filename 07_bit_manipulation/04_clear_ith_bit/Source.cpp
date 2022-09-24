@@ -9,9 +9,15 @@
  */
 void clearIthBit(int& n, int i)
 {
-	int mask{ 1 << i };
-	//std::cout << std::bitset<8>(~mask) << std::endl;
-	n = (n & (~mask));
+	// Set bit to 1 at given index, rest will be 0's, then switch 1 to 0 and 0' to 1's
+	int mask{ ~(1 << i) };
+
+	std::cout << std::setw(20) << "Mask: " << std::setw(10) << std::bitset<8>(mask) << std::endl;
+	std::cout << std::setw(20) << "Value: " << std::setw(10) << std::bitset<8>(n) << std::endl;
+	std::cout << std::setw(20) << "Mask & value: " << std::setw(10) << std::bitset<8>(n & mask) << std::endl;
+
+	// It will turn off bit at given index
+	n = (n & mask);
 }
 
 int main()
