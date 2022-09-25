@@ -9,9 +9,9 @@
 
 
  /**
-  * \brief Function to clear bits from index i to index j
-  * \param n Number in which we want to clear bits
-  * \param i Lowest index from which we want to clear bits
+  * \brief Function to clear bits from index i to index j.
+  * \param n Number in which we want to clear bits.
+  * \param i Lowest index from which we want to clear bits.
   * \param j Highest index to which we want to clear bits.
   */
 void clearBitsInRange(int& n, int i, int j)
