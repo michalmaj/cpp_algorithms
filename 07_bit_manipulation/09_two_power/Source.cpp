@@ -9,7 +9,7 @@ int main()
 	std::cin >> n;
 
 	// For number, that is power of 2, if we take a number one less than our examined number
-	// and do the AND operation we get a 0 as the result
+	// and do the AND operation we get a 0 as the result.
 	std::cout << "n: " << std::setw(12) << std::bitset<8>(n) << std::endl;
 	std::cout << "n - 1: " << std::bitset<8>(n-1) << std::endl;
 
