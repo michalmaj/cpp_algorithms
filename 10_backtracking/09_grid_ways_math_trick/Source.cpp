@@ -29,7 +29,8 @@ int fac(int n)
 int gridWays(int i, int j, int m, int n)
 {
 	//tex:
-	// Formula 1: $$\frac{(m - 1 + n - 1}{(Bb)}$$
+	// Formula: $$\frac{(m - 1 + n - 1)!}{(m-1)!(n-1)!}$$
+
 	int ans = (fac(m - 1 + n - 1) / (fac(m - 1) * fac(n - 1)));
 	return ans;
 }
