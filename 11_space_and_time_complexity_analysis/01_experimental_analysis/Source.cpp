@@ -4,20 +4,16 @@
 #include <ctime>
 
 
-void bubbleSort(std::vector<int>& a)
+void bubbleSort(std::vector<int>& arr, int n)
 {
-	bool swapp = true;
-	while (swapp) {
-		swapp = false;
-		for (size_t i = 0; i < a.size() - 1; i++) {
-			if (a[i] > a[i + 1]) {
-				a[i] += a[i + 1];
-				a[i + 1] = a[i] - a[i + 1];
-				a[i] -= a[i + 1];
-				swapp = true;
-			}
-		}
-	}
+	int i, j;
+	for (i = 0; i < n - 1; i++)
+
+		// Last i elements are already
+		// in place
+		for (j = 0; j < n - i - 1; j++)
+			if (arr[j] > arr[j + 1])
+				std::swap(arr[j], arr[j + 1]);
 }
 
 int main()
@@ -34,7 +30,7 @@ int main()
 
 	auto start_time = std::clock();
 	//std::sort(arr.begin(), arr.end()); // Builtin sort algorithm
-	bubbleSort(arr); // Comment above or this
+	bubbleSort(arr, n); // Comment above line or this line
 	auto end_time = std::clock();
 
 	std::cout << "Time of sort algorithm: " << (end_time - start_time) << " ms." << std::endl;
