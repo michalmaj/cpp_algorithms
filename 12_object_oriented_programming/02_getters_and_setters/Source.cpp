@@ -14,7 +14,10 @@ public:
 	// Setters
 	void setMrp(int price)
 	{
-		mrp = price;
+		if (price > 0)
+			mrp = price;
+		else
+			mrp = 0;
 	}
 
 	void setSellingPrice(int price)
