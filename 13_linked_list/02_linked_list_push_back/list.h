@@ -37,4 +37,19 @@ public:
 		}
 	}
 
+	void push_back(T data)
+	{
+		if (head == nullptr)
+		{
+			Node<T>* n = new Node<T>(data);
+			head = tail = n;
+		}
+		else
+		{
+			Node<T>* n = new Node<T>(data);
+			tail->next = n;
+			tail = n;
+		}
+	}
+
 };
