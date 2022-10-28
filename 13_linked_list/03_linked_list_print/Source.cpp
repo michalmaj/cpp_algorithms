@@ -16,6 +16,9 @@ int main()
 		head = head->getNext();
 	}
 
+	// second option
+	l.print();
+
 
 	return 0;
 }

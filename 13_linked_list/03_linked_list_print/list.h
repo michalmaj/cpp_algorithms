@@ -68,4 +68,14 @@ public:
 		return head;
 	}
 
+	void print()
+	{
+		Node<int>* h = head;
+		while (h != nullptr)
+		{
+			std::cout << h->getData() << "->";
+			h = h->getNext();
+		}
+	}
+
 };
