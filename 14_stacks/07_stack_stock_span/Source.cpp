@@ -27,7 +27,7 @@ void stockSpan(int* prices, int n, int* span)
 			span[i] = i + 1;
 		}
 
-		// push this elemet into the stack
+		// push this element into the stack
 		s.push(i);
 	}
 }
