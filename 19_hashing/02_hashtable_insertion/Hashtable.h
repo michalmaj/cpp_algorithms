@@ -60,5 +60,7 @@ public:
 
 		n->next = table[idx];
 		table[idx] = n;
+
+		cs++;
 	}
 };
