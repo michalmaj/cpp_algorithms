@@ -10,7 +10,7 @@ public:
 	std::string name;
 	std::list<std::string> nbrs;
 
-	Node(std::string name): name(name){}
+	Node(const std::string& name): name(name){}
 
 };
 
